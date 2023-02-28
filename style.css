@@ -47,9 +47,15 @@ body {
   cursor: pointer;
 }
 
-.ul li:hover {
-  color: black;
-  border-bottom: 1px solid black;
+.ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.ul li a:hover {
+  color: #1e1e1e;
+  padding-bottom: 45px;
+  border-bottom: 5px solid black;
 }
 
 .input-container {
