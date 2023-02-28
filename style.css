@@ -97,6 +97,200 @@ body {
   left: 12px;
 }
 
+.container {
+  padding: 40px 112px;
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.first-row {
+  display: flex;
+  gap: 0 10px;
+}
+
+.first-row p {
+  font-size: 13px;
+  line-height: 18px;
+  color: #1e1e1e;
+  cursor: pointer;
+}
+
+.name-of-product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+}
+
+.name-of-product h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: #1e1e1e;
+  font-family: "Poppins";
+}
+
+.icons {
+  display: flex;
+  gap: 0 20px;
+}
+
+.icons img {
+  cursor: pointer;
+}
+
+.product-details {
+  display: flex;
+  margin-top: 36px;
+  justify-content: space-between;
+}
+
+.picture-of-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 392px;
+}
+
+.picture-of-product img {
+  cursor: pointer;
+}
+
+.details-about-product {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px;
+  background-color: #f2f2f2;
+  height: 450px;
+  width: 488px;
+}
+
+.details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bold-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.details-text p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1e1e1e;
+}
+
+.details-about-product span {
+  color: #fe5e41;
+}
+
+.dropdown-menu {
+  display: flex;
+  gap: 0 30px;
+  margin-top: 20px;
+}
+
+.size-menu,
+.color-menu {
+  background-color: white;
+  padding: 3px 12px 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.model p,
+.color p {
+  font-size: 11px;
+  line-height: 18px;
+  color: #6e6e6e;
+}
+
+.size-dropdown,
+.color-dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.size-dropdown p,
+.color-dropdown p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1e1e1e;
+}
+
+.checkbox-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.first-input-container,
+.second-input-container {
+  display: flex;
+  gap: 0 8px;
+}
+
+.first-input-container label,
+.second-input-container label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #1e1e1e;
+}
+
+.checkbox-input {
+  width: 18px;
+  height: 20px;
+}
+
+.checkbox-input[type="checkbox"] {
+  accent-color: #00a878;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.btn {
+  width: 140px;
+  height: 48px;
+  cursor: pointer;
+  font-family: "Poppins";
+}
+
+.green-btn {
+  background: #00a878;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.inverted-green-btn {
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  color: #00a878;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 @media screen and (max-width: 760px) {
   .header {
     height: 70px;
@@ -139,5 +333,110 @@ body {
   .right {
     align-items: center;
     margin-top: 5px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    max-width: 375px;
+  }
+
+  .section-container {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .name-of-product-section {
+    position: relative;
+  }
+
+  .name-of-product h1 {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 330px;
+  }
+
+  .icons {
+    position: absolute;
+    right: 5px;
+    top: 45px;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+  }
+
+  .picture-of-product {
+    height: 210px;
+    position: relative;
+  }
+
+  .picture-of-product .eclipse-arrow-left {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 5px;
+  }
+
+  .picture-of-product .eclipse-arrow-right {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    right: 5px;
+  }
+
+  .picture-of-product .bicycle {
+    width: 330px;
+    height: 210px;
+  }
+
+  .details-about-product {
+    height: 524px;
+    padding: 24px 24px;
+    width: 328px;
+  }
+
+  .details-text {
+    max-width: 288px;
+  }
+
+  .bold-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .details-text p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .dropdown-menu {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .size-menu,
+  .color-menu {
+    width: 288px;
+  }
+
+  .checkbox-inputs {
+    gap: 14px;
+  }
+
+  .first-input-container,
+  .second-input-container {
+    gap: 12px;
+  }
+
+  .first-input-container label,
+  .second-input-container label {
+    width: 100%;
   }
 }
