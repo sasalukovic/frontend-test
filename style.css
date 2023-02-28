@@ -356,6 +356,49 @@ body {
   line-height: 24px;
 }
 
+.technical-spec-container {
+  padding: 20px 110px;
+  background: #f2f2f2;
+  height: 460px;
+}
+
+.technical-title {
+  margin: 40px 0 30px 0;
+}
+
+.technical-title h1 {
+  font-family: "Poppins";
+}
+
+.table {
+  border-collapse: collapse;
+  width: 1216px;
+}
+
+.table tr {
+  height: 40px;
+}
+
+.table td {
+  padding: 8px 20px;
+  text-align: left;
+}
+
+.row-title th {
+  text-align: left;
+  color: #fe5e41;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px 20px;
+  text-align: left;
+}
+
+.white {
+  background: white;
+  border: none;
+}
+
 @media screen and (max-width: 760px) {
   .header {
     height: 70px;
@@ -536,5 +579,10 @@ body {
   .description-section-image img {
     height: 280px;
     width: 375px;
+  }
+
+  .technical-spec-container {
+    padding: 0 20px;
+    overflow-x: scroll;
   }
 }
