@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fe5e41;
+  align-items: center;
+  height: 120px;
+  padding: 40px 112px;
+}
+
+.left {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.ul {
+  display: flex;
+  margin-left: 10px;
+}
+
+.ul li {
+  list-style-type: none;
+  margin: 0 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.ul li:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 4px 4px 0px 0px;
+  height: 56px;
+  padding: 0 10px;
+}
+
+.input {
+  background-color: #f2f2f2;
+  border: none;
+  margin: 0 5px;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.right {
+  display: flex;
+}
+
+.right div {
+  margin: 0 10px;
+}
+
+.right img {
+  cursor: pointer;
+}
+
+.cart-icon-container {
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+@media screen and (max-width: 760px) {
+  .header {
+    height: 70px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 5px 30px 0 0;
+  }
+
+  .line {
+    height: 2px;
+    width: 20px;
+    background: white;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .input-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    padding: 5px 24px;
+  }
+
+  .logo {
+    height: 28px;
+    width: 105px;
+  }
+
+  .right {
+    align-items: center;
+    margin-top: 5px;
+  }
+}
